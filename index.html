@@ -1,2 +1,98 @@
-// TODO: Write a fancy personal website with much woosh. Also, I love Sally :)
-// - Eduardo
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Fungairino</title>
+  <meta name="description" content="Eduardo Fungairino is a staff software engineer building AI agents, browser automation, and developer SDKs.">
+  <link rel="canonical" href="https://fungairino.com/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍄</text></svg>">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --fg: #1c1b19;
+      --muted: #6b675f;
+      --accent: #2f6f5e;
+      --accent-hover: #1f4f43;
+      --rule: #e4e1d9;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151513;
+        --fg: #ecebe6;
+        --muted: #a39f95;
+        --accent: #7fc4ad;
+        --accent-hover: #a6dcc9;
+        --rule: #2b2a27;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font: 18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    main { max-width: 36rem; width: 100%; }
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin: 0 0 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    .role { color: var(--muted); margin: 0 0 1.75rem; }
+    p { margin: 0 0 1rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus-visible { color: var(--accent-hover); text-decoration: underline; }
+    nav {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; }
+    nav svg { width: 1.1em; height: 1.1em; fill: currentColor; flex: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Eduardo Fungairino</h1>
+    <p class="role">Staff Software Engineer</p>
+
+    <p>
+      I'm a software engineer with over a decade of experience across Amazon, startups, and SaaS companies.
+      Right now I work at <a href="https://www.pixiebrix.com/">PixieBrix</a>, where I build AI agents that turn
+      plain-language requests into working browser automations, low-code tooling, and SDKs that other engineering
+      teams build on.
+    </p>
+    <p>
+      I like owning problems end to end, which means I move between frontend, backend, AI, and security depending
+      on what matters most. Lately that's been LLM agents and tool calling, browser extensions, and production
+      reliability. I also run penetration tests and help keep things PCI compliant.
+    </p>
+    <p>
+      Outside of work I tinker with Godot and game development.
+    </p>
+
+    <nav aria-label="Profiles">
+      <a href="https://github.com/fungairino" rel="me">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/efungairino/" rel="me">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+    </nav>
+  </main>
+</body>
+</html>
